@@ -2,6 +2,7 @@
 <html	<?php	language_attributes();	?>>
 <head>
 	<meta charset="<?php	bloginfo('charset');	?>">
+	
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 	<title>
 		<?php bloginfo('name'); ?>
@@ -13,9 +14,15 @@
 			</div>
 		</header>
 		<div class="content">
+			
 			<?php if(have_posts()):	?>
 				<?php while(have_posts()): the_post(); ?>
 					<article class="post">
+						<?php if(has_post_thumbnail()): ?>
+							<div class="post-thumbnail">
+								<?php the_post_thumbnail();	?>
+							</div>
+						<?php endif;?>	
 						<h3>
 							<a href="<?php the_permalink(); ?>">
 								<?php the_title();?>

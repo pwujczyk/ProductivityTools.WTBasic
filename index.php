@@ -22,7 +22,7 @@
 							</a>
 						</h3>
 						<div class="meta">Created: <?php the_date('Y.m.d'); ?></div>
-						<?php the_content();?>
+						<?php the_excerpt(); ?>
 					</article>
 				<?php endwhile;?>
 			<?php else: ?>
