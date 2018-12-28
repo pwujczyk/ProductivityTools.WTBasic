@@ -18,6 +18,7 @@ header {
 	margin: auto;
 	width: 60%;
 	padding: 10px;
+	clear:both;
 }
 
 pre {
@@ -53,6 +54,8 @@ article.post a.button {
 
 .main-nav {
 	padding: 5px;
+	background-color: gainsboro;
+	height: 40px;
 }
 
 .main-nav ul {

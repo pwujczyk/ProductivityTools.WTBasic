@@ -12,8 +12,8 @@
 					<small><?php bloginfo('description'); ?></small>
 			</div>
 		</header>
-		<nav class="main-nav content">
-			<div class="container">
+		<nav class="main-nav">
+			<div class="container content">
 				<?php $args	=	array('theme_location'	=>	'primary');	?>
 				<?php	wp_nav_menu($args);	?>
 			</div>
