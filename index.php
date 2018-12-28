@@ -12,6 +12,12 @@
 					<small><?php bloginfo('description'); ?></small>
 			</div>
 		</header>
+		<nav class="main-nav content">
+			<div class="container">
+				<?php $args	=	array('theme_location'	=>	'primary');	?>
+				<?php	wp_nav_menu($args);	?>
+			</div>
+		</nav>
 		<div class="content">
 			<?php if(have_posts()):	?>
 				<?php while(have_posts()): the_post(); ?>

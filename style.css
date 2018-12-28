@@ -50,3 +50,22 @@ article.post a.button {
 .post-thumbnail {
 	float: left;
 }
+
+.main-nav {
+	padding: 5px;
+}
+
+.main-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.main-nav li {
+	list-style: none;
+	float: left;
+	padding-right: 15px;
+}
+
+.main-nav a {
+	text-decoration: none;
+}
