@@ -5,20 +5,27 @@
 */
 
 body {
-	background: #FFF;
+	background: #f2f2f2;
 	margin: 0px;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+	font-family: Noto Sans,sans-serif;
 }
 
 header {
-	background: #f0f0f5
+
 }
 
-.content {
+.middleColumn {
 	margin: auto;
 	width: 60%;
 	padding: 10px;
 	clear:both;
+	
+}
+
+#content{
+	background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 3px
 }
 
 pre {
@@ -37,6 +44,8 @@ h1 {
 article.post {
 	border-bottom: 1px #ccc solid;
 	overflow: hidden;
+	font-size: 14px;
+	
 }
 
 article.post a.button {
@@ -54,8 +63,14 @@ article.post a.button {
 
 .main-nav {
 	padding: 5px;
-	background-color: gainsboro;
+	background-color: #42ad88;
+	color:white !important;
 	height: 40px;
+}
+
+
+.main-nav a {
+	color:white !important;
 }
 
 .main-nav ul {

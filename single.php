@@ -9,10 +9,18 @@
 	</title>
 		<header>
 			<div class="content">
-					<h1><?php bloginfo('name'); ?></h1>
+			<a href="/"><h1><?php bloginfo('name'); ?></h1></a>
 					<small><?php bloginfo('description'); ?></small>
 			</div>
 		</header>
+		<nav class="main-nav">
+			<div class="container content">
+				<?php $args	=	array('theme_location'	=>	'primary');	?>
+				<?php	wp_nav_menu($args);	?>
+			</div>
+		</nav>
+</head>
+	<body>
 		<div class="content">
 			
 			<?php if(have_posts()):	?>
@@ -36,5 +44,5 @@
 				<?php echo wpautop('Sorry, No posts were found');?>
 			<?php	endif;	?>
 		</div>
-</head>
+	</body>
 </html>
