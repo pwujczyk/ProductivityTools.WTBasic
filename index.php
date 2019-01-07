@@ -9,39 +9,64 @@
 	</title>
 		<header>
 			<div class="middleColumn">
-					<h1><?php bloginfo('name'); ?></h1>
+					<h1><a href="/"><?php bloginfo('name'); ?></a></h1>
 					<small><?php bloginfo('description'); ?></small>
 			</div>
 		</header>
-		<nav class="main-nav">
-			<div class="container middleColumn">
-				<?php $args	=	array('theme_location'	=>	'primary');	?>
-				<?php	wp_nav_menu($args);	?>
-			</div>
-		</nav>
+		<?php if(has_nav_menu('primary')): ?>
+			<nav class="main-nav">
+				<div class="container middleColumn">
+					<?php $args	= array('theme_location' =>	'primary');	?>
+					<?php wp_nav_menu($args);	?>
+				</div>
+			</nav>
+		<?php endif;?>
 		
 </head>
 <body>
 	<div class="middleColumn" id="content">
+		<div class="articles">
 			<?php if(have_posts()):	?>
 				<?php while(have_posts()): the_post(); ?>
 					<article class="post">
+						<p class="article-category">
+							<?php
+								$categories	=	get_the_category();
+								$separator	=	",	";
+								$output	=	'Category: ';
+								if($categories){
+									foreach($categories	as	$category){
+										$output	.=	'<a	href="'.get_category_link($category->term_id).'">'.
+										$category->cat_name.'</a>'.$separator;
+									}
+								}
+							echo trim($output,	$separator);
+							?>
+						</p>
+
 						<h3>
 							<a href="<?php the_permalink(); ?>">
 								<?php the_title();?>
 							</a>
 						</h3>
 						<?php the_excerpt(); ?>
+
+						
+
 					</article>
 					
 				<?php endwhile;?>			
 			<?php else: ?>
 				<?php echo wpautop('Sorry, No posts were found');?>
 			<?php	endif;	?>
-			<div class="sidebar">
-				Test
-			</div>
-			<?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" scroll="false" button_label="More"]'); ?>
+		</div>
+		<div class="sidebar">
+			<?php	if(is_active_sidebar('sidebar'))	:	?>
+				<?php dynamic_sidebar('sidebar');	?>
+			<?php endif;	?>
+		</div>
+		
+	
 
 	</div>
 	<?php wp_footer(); ?>
