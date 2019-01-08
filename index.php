@@ -50,9 +50,6 @@
 							</a>
 						</h3>
 						<?php the_excerpt(); ?>
-
-						
-
 					</article>
 					
 				<?php endwhile;?>			
