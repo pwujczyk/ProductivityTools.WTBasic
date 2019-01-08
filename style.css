@@ -225,3 +225,12 @@ article.post a.button {
 .main-nav a {
 	text-decoration: none;
 }
+
+
+/* loadmore */
+
+.ajax-load-more-wrap.green .alm-load-more-btn 
+{
+	background-color: #42ad88 !important;
+	width: 100% !important;
+}

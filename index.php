@@ -59,6 +59,8 @@
 			<?php else: ?>
 				<?php echo wpautop('Sorry, No posts were found');?>
 			<?php	endif;	?>
+
+			<?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" scroll="false" button_label="More"]'); ?>
 		</div>
 		<div class="sidebar">
 			<?php	if(is_active_sidebar('sidebar'))	:	?>
