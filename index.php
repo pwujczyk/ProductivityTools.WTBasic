@@ -49,7 +49,7 @@
 								<?php the_title();?>
 							</a>
 						</h3>
-						<?php the_excerpt(); ?>
+						<?php the_content("(...)"); ?>
 					</article>
 					
 				<?php endwhile;?>			
@@ -57,7 +57,7 @@
 				<?php echo wpautop('Sorry, No posts were found');?>
 			<?php	endif;	?>
 
-			<?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" scroll="false" button_label="More"]'); ?>
+			<?php echo do_shortcode('[ajax_load_more container_type="div" post_type="post" scroll="false" button_label="More" offset="5"]'); ?>
 		</div>
 		<div class="sidebar">
 			<?php	if(is_active_sidebar('sidebar'))	:	?>

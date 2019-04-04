@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html	<?php	language_attributes();	?>>
+<html	<?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php	bloginfo('charset');	?>">
-	
+	<meta charset="<?php bloginfo('charset'); ?>">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<?php wp_head(); ?>
 	<title>
 		<?php bloginfo('name'); ?>
 	</title>
@@ -24,7 +24,6 @@
 </head>
 	<body>
 		<div class="middleColumn">
-			
 			<?php if(have_posts()):	?>
 				<?php while(have_posts()): the_post(); ?>
 					<article class="post">
@@ -64,5 +63,6 @@
 				<?php echo wpautop('Sorry, No posts were found');?>
 			<?php	endif;	?>
 		</div>
+		<?php wp_footer(); ?>
 	</body>
 </html>
