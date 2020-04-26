@@ -9,8 +9,13 @@
 	</title>
 		<header>
 			<div class="middleColumn">
-			<a href="/"><h1><?php bloginfo('name'); ?></h1></a>
+				<div class="topLogo">
+					<img src="http://cdn.productivitytools.tech/images/PT/ProductivityTools_white_transparent_53px_2.png">
+				</div>
+				<div class="textLogo">
+					<h1><a href="/"><?php bloginfo('name'); ?></a></h1>
 					<small><?php bloginfo('description'); ?></small>
+				</div>
 			</div>
 		</header>
 		<?php if(has_nav_menu('primary')): ?>

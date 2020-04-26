@@ -3,14 +3,20 @@
 <head>
 	<meta charset="<?php bloginfo('charset');	?>">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+	<link rel="shortcut icon" href="http://cdn.productivitytools.tech/images/PT/ProductivityTools_green_40px_3.png" type="image/x-icon">
 	<?php wp_head(); ?>
 	<title>
 		<?php bloginfo('name'); ?>
 	</title>
 		<header>
 			<div class="middleColumn">
+				<div class="topLogo">
+					<img src="http://cdn.productivitytools.tech/images/PT/ProductivityTools_white_transparent_53px_2.png">
+				</div>
+				<div class="textLogo">
 					<h1><a href="/"><?php bloginfo('name'); ?></a></h1>
 					<small><?php bloginfo('description'); ?></small>
+				</div>
 			</div>
 		</header>
 		<?php if(has_nav_menu('primary')): ?>

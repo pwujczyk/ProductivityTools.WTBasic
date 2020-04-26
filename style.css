@@ -117,7 +117,7 @@ article.post a.button {
 	height: 10px;
 	width: 10px;
 	background-size: 10px;
-	background-image: url('http://www.productivitytools.tech/wp-content/uploads/2019/01/arrows.png');
+	background-image: url('http://cdn.productivitytools.tech/images/General/Arrows.png');
 	background-repeat: no-repeat;
 	margin-right: 5px;
   }
@@ -128,7 +128,7 @@ article.post a.button {
 	height: 15px;
 	width: 15px;
 	background-size: 15px;
-	background-image: url('http://cdn.productivitytools.tech/Github_white40px.png');
+	background-image: url('http://cdn.productivitytools.tech/images/General/Github_white40px.png');
 	background-repeat: no-repeat;
 	margin-right: 5px;
   }
@@ -139,7 +139,7 @@ article.post a.button {
 	height: 15px;
 	width: 15px;
 	background-size: 15px;
-	background-image: url('http://cdn.productivitytools.tech/Powershell_white40px.png');
+	background-image: url('http://cdn.productivitytools.tech/images/General/Powershell_white40px.png');
 	background-repeat: no-repeat;
 	margin-right: 5px;
   }
@@ -150,7 +150,7 @@ article.post a.button {
 	height: 15px;
 	width: 15px;
 	background-size: 15px;
-	background-image: url('http://cdn.productivitytools.tech/Nuget_white40px.png');
+	background-image: url('http://cdn.productivitytools.tech/images/General/Nuget_white40px.png');
 	background-repeat: no-repeat;
 	margin-right: 5px;
   }
@@ -161,7 +161,7 @@ article.post a.button {
 	height: 15px;
 	width: 15px;
 	background-size: 15px;
-	background-image: url('http://cdn.productivitytools.tech/StackOverflow_white40px.png');
+	background-image: url('http://cdn.productivitytools.tech/images/General/StackOverflow_white40px.png');
 	background-repeat: no-repeat;
 	margin-right: 5px;
   }
@@ -172,7 +172,7 @@ article.post a.button {
 	height: 15px;
 	width: 15px;
 	background-size: 15px;
-	background-image: url('http://www.productivitytools.tech/wp-content/uploads/2019/01/email_white40px.png');
+	background-image: url('http://cdn.productivitytools.tech/images/General/Email_white40px.png');
 	background-repeat: no-repeat;
 	margin-right: 5px;
   }
@@ -273,4 +273,10 @@ article.post a.button {
 	width:25px;
 	padding-left:5px;
 	display: unset;
+}
+
+.topLogo{
+	float:left;
+	padding-top:18px;
+	margin-right:10px;
 }
