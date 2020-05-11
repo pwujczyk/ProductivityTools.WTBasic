@@ -280,3 +280,8 @@ article.post a.button {
 	padding-top:18px;
 	margin-right:10px;
 }
+
+.sourceCode > span
+{
+	display:block; 
+}
