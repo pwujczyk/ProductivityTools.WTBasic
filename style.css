@@ -280,6 +280,10 @@ article.post a.button {
 	margin-right:10px;
 }
 
+.sourceCode{
+	overflow:auto;
+}
+
 .sourceCode > span
 {
 	display:block; 
