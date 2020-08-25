@@ -5,62 +5,61 @@
 */
 
 body {
-	background: #f2f2f2;
-	margin: 0px;
-	font-family: Noto Sans,sans-serif;
+    background: #f2f2f2;
+    margin: 0px;
+    font-family: Noto Sans,sans-serif;
 }
 
 header {
-	background-color: #42ad88;
-	color:white !important;
-	min-height: 80px;
+    background-color: #42ad88;
+    color: white !important;
+    min-height: 80px;
 }
 
-header h1{
-	margin-bottom: 0;
-	padding-top: 10px;
-}
+    header h1 {
+        margin-bottom: 0;
+        padding-top: 10px;
+    }
 
-header a{
-	color:white;
-	text-decoration: none;
-}
+    header a {
+        color: white;
+        text-decoration: none;
+    }
 
 .middleColumn {
-	margin: auto;
-	width: 60%;
-	clear:both;
+    margin: auto;
+    width: 60%;
+    clear: both;
 }
 
-#content{
-	border-radius: 3px;
-	display: flex;
+#content {
+    border-radius: 3px;
+    display: flex;
 }
 
 pre {
-	background-color: #f0f0f5;
-	padding: 10px;
+    background-color: #f0f0f5;
+    padding: 10px;
 }
 
 a {
-	color: #333;
+    color: #333;
 }
 
 h1 {
-	margin-top: 0px;
+    margin-top: 0px;
 }
 
-.articles{
-	width: 80%;
-	float:left;
+.articles {
+    width: 80%;
+    float: left;
 }
 
 article.post {
-	border-bottom: 1px #ccc solid;
-	/* overflow: hidden; */
-	font-size: 14px;
-
-	background-color: #fff;
+    border-bottom: 1px #ccc solid;
+    /* overflow: hidden; */
+    font-size: 14px;
+    background-color: #fff;
     box-shadow: 0 5px 9px 0 rgba(0,0,0,.09);
     display: -ms-flexbox;
     /* display: flex;
@@ -69,222 +68,227 @@ article.post {
     padding: 15px 25px 25px 25px;
     /* position: relative; */
     /* width: 100%; */
-	/* list-style: none; */
+    /* list-style: none; */
     margin: 12px 0 0;
+    display: flow-root;
 }
 
-article.post a.button {
-	display: inline-block;
-	background: #333;
-	color: #fff;
-	padding: 10px 5px;
-	margin-bottom: 10px;
-	text-decoration: none;
-}
+    article.post a.button {
+        display: inline-block;
+        background: #333;
+        color: #fff;
+        padding: 10px 5px;
+        margin-bottom: 10px;
+        text-decoration: none;
+    }
 
-.article-category{
-	float: right;
+.article-category {
+    float: right;
     margin-top: -10px;
     color: lightgray;
 }
-.article-category a{
-	text-decoration: none;
-	color: lightgray;
-}
+
+    .article-category a {
+        text-decoration: none;
+        color: lightgray;
+    }
 
 .post-thumbnail {
-	float: left;
+    float: left;
 }
 
-.sidebar{
-	float:left;
-	width:20%;
-	background-color: #242424;
+.sidebar {
+    float: left;
+    width: 20%;
+    background-color: #242424;
     color: white;
-	min-height: calc(100% - 61px);
-	margin: 0 10px;
-	font-size:12px;
+    min-height: calc(100% - 61px);
+    margin: 0 10px;
+    font-size: 12px;
 }
 
-.sidebar ul {
-	list-style-type: none;
-	padding-left:10px;
+    .sidebar ul {
+        list-style-type: none;
+        padding-left: 10px;
+    }
+
+    .sidebar ul li:before {
+         content: '';
+        display: inline-block;
+        height: 10px;
+         width: 10px;
+        background-size: 10px;
+        background-image: url('http://cdn.productivitytools.tech/images/General/Arrows.png');
+        background-repeat: no-repeat;
+        margin-right: 5px;
+    }
+
+    .sidebar ul li.menu-github:before {
+        content: '';
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        background-size: 15px;
+        background-image: url('http://cdn.productivitytools.tech/images/General/Github_white40px.png');
+        background-repeat: no-repeat;
+        margin-right: 5px;
+    }
+
+    .sidebar ul li.menu-powershellgallery:before {
+        content: '';
+        display: inline-block;
+        height: 15px;
+        width: 15px;
+        background-size: 15px;
+        background-image: url('http://cdn.productivitytools.tech/images/General/Powershell_white40px.png');
+        background-repeat: no-repeat;
+        margin-right: 5px;
+    }
+
+        .sidebar ul li.menu-nugetgallery:before {
+            content: '';
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            background-size: 15px;
+            background-image: url('http://cdn.productivitytools.tech/images/General/Nuget_white40px.png');
+            background-repeat: no-repeat;
+            margin-right: 5px;
+        }
+
+        .sidebar ul li.menu-stackoverflow:before {
+            content: '';
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            background-size: 15px;
+            background-image: url('http://cdn.productivitytools.tech/images/General/StackOverflow_white40px.png');
+            background-repeat: no-repeat;
+            margin-right: 5px;
+        }
+
+        .sidebar ul li.menu-email:before {
+            content: '';
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            background-size: 15px;
+            background-image: url('http://cdn.productivitytools.tech/images/General/Email_white40px.png');
+            background-repeat: no-repeat;
+            margin-right: 5px;
+        }
+
+
+    .sidebar li {
+        margin-top: 10px;
+    }
+
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .sidebar .menu-github a,
+    .sidebar .menu-powershellgallery a,
+    .sidebar .menu-nugetgallery a,
+    .sidebar .menu-stackoverflow a,
+    .sidebar .menu-email a {
+    	vertical-align: 3px;
 }
 
-.sidebar ul li:before {
-	content: '';
-	display: inline-block;
-	height: 10px;
-	width: 10px;
-	background-size: 10px;
-	background-image: url('http://cdn.productivitytools.tech/images/General/Arrows.png');
-	background-repeat: no-repeat;
-	margin-right: 5px;
-  }
-
-.sidebar ul li.menu-github:before {
-	content: '';
-	display: inline-block;
-	height: 15px;
-	width: 15px;
-	background-size: 15px;
-	background-image: url('http://cdn.productivitytools.tech/images/General/Github_white40px.png');
-	background-repeat: no-repeat;
-	margin-right: 5px;
-  }
-
- .sidebar ul li.menu-powershellgallery:before {
-	content: '';
-	display: inline-block;
-	height: 15px;
-	width: 15px;
-	background-size: 15px;
-	background-image: url('http://cdn.productivitytools.tech/images/General/Powershell_white40px.png');
-	background-repeat: no-repeat;
-	margin-right: 5px;
-  }
-
-  .sidebar ul li.menu-nugetgallery:before {
-	content: '';
-	display: inline-block;
-	height: 15px;
-	width: 15px;
-	background-size: 15px;
-	background-image: url('http://cdn.productivitytools.tech/images/General/Nuget_white40px.png');
-	background-repeat: no-repeat;
-	margin-right: 5px;
-  }
-
-.sidebar ul li.menu-stackoverflow:before {
-	content: '';
-	display: inline-block;
-	height: 15px;
-	width: 15px;
-	background-size: 15px;
-	background-image: url('http://cdn.productivitytools.tech/images/General/StackOverflow_white40px.png');
-	background-repeat: no-repeat;
-	margin-right: 5px;
-  }
-
-  .sidebar ul li.menu-email:before {
-	content: '';
-	display: inline-block;
-	height: 15px;
-	width: 15px;
-	background-size: 15px;
-	background-image: url('http://cdn.productivitytools.tech/images/General/Email_white40px.png');
-	background-repeat: no-repeat;
-	margin-right: 5px;
-  }
-  
-
-.sidebar li{
-	margin-top: 10px;
-}
-
-.sidebar a{
-	color: white;
-	text-decoration: none;
-}
-
-.sidebar .menu-github a, 
-.sidebar .menu-powershellgallery a, 
-.sidebar .menu-nugetgallery a,
-.sidebar .menu-stackoverflow a, 	
-.sidebar .menu-email a{
-	vertical-align: 3px;
-}
-
-.sidebar h3{
-	padding-left:10px;
+.sidebar h3 {
+    padding-left: 10px;
 }
 
 .main-nav {
-	padding: 5px;
-	background-color: #42ad88;
-	color:white !important;
-	height: 40px;
+    padding: 5px;
+    background-color: #42ad88;
+    color: white !important;
+    height: 40px;
 }
 
 
 .main-nav a {
-	color:white !important;
+    color: white !important;
 }
 
 .main-nav ul {
-	margin: 0;
-	padding: 0;
+     margin: 0;
+    padding: 0;
 }
 
 .main-nav li {
-	list-style: none;
-	float: left;
-	padding-right: 15px;
+    list-style: none;
+    float: left;
+    padding-right: 15px;
 }
 
 .main-nav a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 
 /* loadmore */
 
-.ajax-load-more-wrap.green .alm-load-more-btn 
-{
-	background-color: #42ad88 !important;
-	width: 100% !important;
+.ajax-load-more-wrap.green .alm-load-more-btn {
+    background-color: #42ad88 !important;
+    width: 100% !important;
 }
 
-
-.full-article-published{
-	float:left;
-	color: lightgray;
+.full-article-published {
+    float: left;
+    color: lightgray;
 }
 
-.full-article-category{
-	float:right;
-	color:lightgray;
+.full-article-category {
+    float: right;
+    color: lightgray;
 }
 
-.full-article-category a{
-	text-decoration: none;
-	color: lightgray;
+.full-article-category a {
+    text-decoration: none;
+    color: lightgray;
 }
 
-.full-article-title{
-	clear:both;
+.full-article-title {
+    clear: both;
 }
 
 .article-external-links {
-	float:right;
-	margin-top: -41px;
+    float: right;
+    margin-top: -41px;
 }
 
-.post img{
-	display: block;
+.post img {
+    display: block;
     margin-left: auto;
-	margin-right: auto;
-	max-width: 800px;
+    margin-right: auto;
+    max-width: 800px;
 }
 
 
-.article-external-links img{
-	width:25px;
-	padding-left:5px;
-	display: unset;
+.article-external-links img {
+    width: 25px;
+    padding-left: 5px;
+    display: unset;
 }
 
-.topLogo{
-	float:left;
-	padding-top:18px;
-	margin-right:10px;
+.topLogo {
+    float: left;
+    padding-top: 18px;
+    margin-right: 10px;
 }
 
-.sourceCode{
-	overflow:auto;
+.sourceCode {
+    overflow: auto;
 }
 
-.sourceCode > span
-{
-	display:block; 
+.sourceCode > span {
+    display: block;
+}
+
+.articles .post img {
+    max-width: 150px;
+    float: right;
+    margin-top: 0px;
 }
